@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Subota_bdDataSet1" targetNamespace="http://tempuri.org/_Subota_bdDataSet1.xsd" xmlns:mstns="http://tempuri.org/_Subota_bdDataSet1.xsd" xmlns="http://tempuri.org/_Subota_bdDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="_Subota_bdConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_Subota_bdConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Megadrive_app.Properties.Settings.GlobalReference.Default._Subota_bdConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Transport_view_cutedTableAdapter" GeneratorDataComponentClassName="Transport_view_cutedTableAdapter" Name="Transport_view_cuted" UserDataComponentName="Transport_view_cutedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_Subota_bdConnectionString (Settings)" DbObjectName="_Subota_bd.dbo.Transport_view_cuted" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT transport_name, transport_color, transport_model, transport_number, transport_enabled FROM dbo.Transport_view_cuted</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="transport_name" DataSetColumn="transport_name" />
+              <Mapping SourceColumn="transport_color" DataSetColumn="transport_color" />
+              <Mapping SourceColumn="transport_model" DataSetColumn="transport_model" />
+              <Mapping SourceColumn="transport_number" DataSetColumn="transport_number" />
+              <Mapping SourceColumn="transport_enabled" DataSetColumn="transport_enabled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Subota_bdDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Subota_bdDataSet1" msprop:Generator_UserDSName="_Subota_bdDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Transport_view_cuted" msprop:Generator_TableClassName="Transport_view_cutedDataTable" msprop:Generator_TableVarName="tableTransport_view_cuted" msprop:Generator_TablePropName="Transport_view_cuted" msprop:Generator_RowDeletingName="Transport_view_cutedRowDeleting" msprop:Generator_RowChangingName="Transport_view_cutedRowChanging" msprop:Generator_RowEvHandlerName="Transport_view_cutedRowChangeEventHandler" msprop:Generator_RowDeletedName="Transport_view_cutedRowDeleted" msprop:Generator_UserTableName="Transport_view_cuted" msprop:Generator_RowChangedName="Transport_view_cutedRowChanged" msprop:Generator_RowEvArgName="Transport_view_cutedRowChangeEvent" msprop:Generator_RowClassName="Transport_view_cutedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="transport_name" msprop:Generator_ColumnVarNameInTable="columntransport_name" msprop:Generator_ColumnPropNameInRow="transport_name" msprop:Generator_ColumnPropNameInTable="transport_nameColumn" msprop:Generator_UserColumnName="transport_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transport_color" msprop:Generator_ColumnVarNameInTable="columntransport_color" msprop:Generator_ColumnPropNameInRow="transport_color" msprop:Generator_ColumnPropNameInTable="transport_colorColumn" msprop:Generator_UserColumnName="transport_color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transport_model" msprop:Generator_ColumnVarNameInTable="columntransport_model" msprop:Generator_ColumnPropNameInRow="transport_model" msprop:Generator_ColumnPropNameInTable="transport_modelColumn" msprop:Generator_UserColumnName="transport_model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transport_number" msprop:Generator_ColumnVarNameInTable="columntransport_number" msprop:Generator_ColumnPropNameInRow="transport_number" msprop:Generator_ColumnPropNameInTable="transport_numberColumn" msprop:Generator_UserColumnName="transport_number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="transport_enabled" msprop:Generator_ColumnVarNameInTable="columntransport_enabled" msprop:Generator_ColumnPropNameInRow="transport_enabled" msprop:Generator_ColumnPropNameInTable="transport_enabledColumn" msprop:Generator_UserColumnName="transport_enabled" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
